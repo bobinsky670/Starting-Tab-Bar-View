@@ -14,7 +14,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<Widget> myTabs = <Widget>[
+  List<Widget> myTabs = [
     MyTab(iconPath: "lib/icons/donut.png"),
     MyTab(iconPath: "lib/icons/pizza.png"),
     MyTab(iconPath: "lib/icons/smoothie.png"),
@@ -64,7 +64,8 @@ class _HomePageState extends State<HomePage> {
             TabBar(tabs: myTabs),
 
             // 3. Contenido de pestañas (TabBarView)
-            Expanded( // <-- Agregamos Expanded para que TabBarView use el espacio restante
+            Expanded(
+              // <-- Agregamos Expanded para que TabBarView use el espacio restante
               child: TabBarView(
                 children: [
                   DonutTab(),
