@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.transparent,
-          leading: Icon(Icons.menu, color: Colors.grey[800]),
+          leading: Icon(Icons.menu, color: const Color.fromARGB(255, 104, 103, 103)),
           actions: const [
             Padding(
               padding: EdgeInsets.only(right: 24.0),
